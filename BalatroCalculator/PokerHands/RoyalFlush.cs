@@ -6,7 +6,7 @@ public sealed class RoyalFlush : PokerHand
     public override int Rank { get; protected init; } = 9;
 
     public override int ChipsValue { get; protected set; } = 100;
-    public override int MultValue { get; protected set; } = 100;
+    public override int MultValue { get; protected set; } = 8;
 
     public override bool IsSecret { get; protected init; } = false;
     public override bool IsMatch(ICollection<PlayingCard> playingCards)
