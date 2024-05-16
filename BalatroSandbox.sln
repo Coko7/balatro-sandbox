@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalatroSandbox", "BalatroSandbox\BalatroSandbox.csproj", "{1EB8FBE4-A20B-429F-BAFD-01CC4B3F8487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalatroCalculator", "BalatroCalculator\BalatroCalculator.csproj", "{9B051A5B-E3F5-4C03-B098-39198FCB552A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalatroCalculator.Tests", "BalatroCalculator.Tests\BalatroCalculator.Tests.csproj", "{F27D18CF-1B73-4FA1-B681-FA4E9057046A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EB8FBE4-A20B-429F-BAFD-01CC4B3F8487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB8FBE4-A20B-429F-BAFD-01CC4B3F8487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB8FBE4-A20B-429F-BAFD-01CC4B3F8487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB8FBE4-A20B-429F-BAFD-01CC4B3F8487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B051A5B-E3F5-4C03-B098-39198FCB552A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B051A5B-E3F5-4C03-B098-39198FCB552A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B051A5B-E3F5-4C03-B098-39198FCB552A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B051A5B-E3F5-4C03-B098-39198FCB552A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F27D18CF-1B73-4FA1-B681-FA4E9057046A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27D18CF-1B73-4FA1-B681-FA4E9057046A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27D18CF-1B73-4FA1-B681-FA4E9057046A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27D18CF-1B73-4FA1-B681-FA4E9057046A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
