@@ -1,4 +1,4 @@
-using BalatroCalculator.PokerHands;
+using BalatroCalculator.Models.PokerHands;
 
 namespace BalatroCalculator.Tests;
 

@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using BalatroCalculator;
+using BalatroCalculator.Models;
+using BalatroCalculator.Utils;
 
 var playedCards = new List<PlayingCard>
 {

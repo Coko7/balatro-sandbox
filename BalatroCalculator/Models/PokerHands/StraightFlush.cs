@@ -1,18 +1,18 @@
-namespace BalatroCalculator.PokerHands;
+namespace BalatroCalculator.Models.PokerHands;
 
-public sealed class Straight : PokerHand
+public sealed class StraightFlush : PokerHand
 {
-    public override string Name { get; protected init; } = "Straight";
-    public override int Rank { get; protected init; } = 4;
+    public override string Name { get; protected init; } = "Straight Flush";
+    public override int Rank { get; protected init; } = 8;
 
-    public override int ChipsValue { get; protected set; } = 30;
-    public override int MultValue { get; protected set; } = 4;
+    public override int ChipsValue { get; protected set; } = 100;
+    public override int MultValue { get; protected set; } = 8;
 
     public override bool IsSecret { get; protected init; } = false;
-
     public override bool IsMatch(ICollection<PlayingCard> playingCards)
     {
         if (playingCards.Count != 5) return false;
+        if (playingCards.GroupBy(card => card.Suit).Count() != 1) return false;
 
         var sortedPlayingCards = playingCards.OrderBy(card => card.Rank).ToList();
 

@@ -1,4 +1,4 @@
-namespace BalatroCalculator.PokerHands;
+namespace BalatroCalculator.Models.PokerHands;
 
 public sealed class RoyalFlush : PokerHand
 {

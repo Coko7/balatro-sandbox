@@ -1,6 +1,7 @@
-using BalatroCalculator.PokerHands;
+using BalatroCalculator.Models;
+using BalatroCalculator.Models.PokerHands;
 
-namespace BalatroCalculator;
+namespace BalatroCalculator.Utils;
 
 public static class PokerHandsChecker
 {

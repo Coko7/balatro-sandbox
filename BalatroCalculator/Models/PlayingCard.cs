@@ -1,4 +1,4 @@
-namespace BalatroCalculator;
+namespace BalatroCalculator.Models;
 
 public enum CardRank
 {
