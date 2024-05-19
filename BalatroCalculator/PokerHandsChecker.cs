@@ -6,6 +6,9 @@ public static class PokerHandsChecker
 {
     private static readonly List<PokerHand> PokerHands =
         [
+            new FlushFive(),
+            new FlushHouse(),
+            new FiveOfAKind(),
             new RoyalFlush(),
             new StraightFlush(),
             new FourOfAKind(),

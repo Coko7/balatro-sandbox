@@ -163,4 +163,52 @@ public class PokerHandsTests
         var pokerHandMatched = PokerHandsChecker.DeterminePokerHands(playedCards);
         Assert.IsType<RoyalFlush>(pokerHandMatched);
     }
+    
+    [Fact]
+    public void Test_Is_FiveOfAKind()
+    {
+        var playedCards = new List<PlayingCard>
+        {
+            new(CardRank.Ten, CardSuit.Club),
+            new(CardRank.Ten, CardSuit.Diamond),
+            new(CardRank.Ten, CardSuit.Heart),
+            new(CardRank.Ten, CardSuit.Heart),
+            new(CardRank.Ten, CardSuit.Spade),
+        };
+
+        var pokerHandMatched = PokerHandsChecker.DeterminePokerHands(playedCards);
+        Assert.IsType<FiveOfAKind>(pokerHandMatched);
+    }
+    
+    [Fact]
+    public void Test_Is_FlushHouse()
+    {
+        var playedCards = new List<PlayingCard>
+        {
+            new(CardRank.Seven, CardSuit.Diamond),
+            new(CardRank.Seven, CardSuit.Diamond),
+            new(CardRank.Seven, CardSuit.Diamond),
+            new(CardRank.Queen, CardSuit.Diamond),
+            new(CardRank.Queen, CardSuit.Diamond),
+        };
+
+        var pokerHandMatched = PokerHandsChecker.DeterminePokerHands(playedCards);
+        Assert.IsType<FlushHouse>(pokerHandMatched);
+    }
+    
+    [Fact]
+    public void Test_Is_FlushFive()
+    {
+        var playedCards = new List<PlayingCard>
+        {
+            new(CardRank.Two, CardSuit.Diamond),
+            new(CardRank.Two, CardSuit.Diamond),
+            new(CardRank.Two, CardSuit.Diamond),
+            new(CardRank.Two, CardSuit.Diamond),
+            new(CardRank.Two, CardSuit.Diamond),
+        };
+
+        var pokerHandMatched = PokerHandsChecker.DeterminePokerHands(playedCards);
+        Assert.IsType<FlushFive>(pokerHandMatched);
+    }
 }
