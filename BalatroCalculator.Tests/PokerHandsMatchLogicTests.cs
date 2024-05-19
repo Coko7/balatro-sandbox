@@ -2,7 +2,7 @@ using BalatroCalculator.PokerHands;
 
 namespace BalatroCalculator.Tests;
 
-public class PokerHandsTests
+public class PokerHandsMatchLogicTests
 {
     [Fact]
     public void Test_Is_HighCard()
@@ -18,6 +18,35 @@ public class PokerHandsTests
 
         var pokerHandMatched = PokerHandsChecker.DeterminePokerHands(playedCards);
         Assert.IsType<HighCard>(pokerHandMatched);
+    }
+
+    [Fact]
+    public void Test_Is_Pair()
+    {
+        var playedCards = new List<PlayingCard>
+        {
+            new(CardRank.Two, CardSuit.Club),
+            new(CardRank.Two, CardSuit.Spade),
+        };
+
+        var pokerHandMatched = PokerHandsChecker.DeterminePokerHands(playedCards);
+        Assert.IsType<Pair>(pokerHandMatched);
+    }
+    
+    [Fact]
+    public void Test_Is_TwoPair()
+    {
+        var playedCards = new List<PlayingCard>
+        {
+            new(CardRank.Two, CardSuit.Club),
+            new(CardRank.Two, CardSuit.Spade),
+            new(CardRank.Five, CardSuit.Club),
+            new(CardRank.Ten, CardSuit.Heart),
+            new(CardRank.Five, CardSuit.Diamond),
+        };
+
+        var pokerHandMatched = PokerHandsChecker.DeterminePokerHands(playedCards);
+        Assert.IsType<TwoPair>(pokerHandMatched);
     }
     
     [Fact]
